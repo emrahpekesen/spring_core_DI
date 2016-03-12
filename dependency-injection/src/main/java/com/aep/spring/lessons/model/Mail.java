@@ -9,7 +9,6 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain=true)
 @ToString
-@Component
 public class Mail {
    private String mimeType;
    private String to;

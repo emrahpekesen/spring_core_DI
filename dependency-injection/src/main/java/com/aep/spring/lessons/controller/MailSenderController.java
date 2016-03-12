@@ -20,11 +20,8 @@ public class MailSenderController {
 	}
 
 	@Autowired
-	// @Qualifier("html")
-	@Qualifier("textMailSender") // Eğer Component sınıfında özel bir qualifier
-									// tanımlamadıysanız, qualifier adını
-									// sınıfın camelCase hlai olarak
-									// tanımlamalısınız!
+	@Qualifier("htmlMail")
+	//@Qualifier("textMailSender") // Qualifier ,Configuration sınıfında tanıladığınız methodun adı olmalı
 	MailSender mailSender;
 
 	@RequestMapping("/sendMail")
